@@ -141,17 +141,17 @@ set(GAME_SRC
   Classes/Producer/Obstacle/Obstacle.cpp
   Classes/Producer/JsonCpp/jsoncpp.cpp
   Classes/Scene/Loading/LoadingScene.cpp
-  Classes/Scene/Main/Home/Home.cpp
-  Classes/Scene/Main/Login/Login.cpp
-  Classes/Scene/Main/Preface/Preface.cpp
+  Classes/Scene/Home/Home.cpp
+  Classes/Scene/Login/Login.cpp
+  Classes/Scene/Preface/Preface.cpp
   Classes/Layer/Loading/LoadingLayer.cpp
-  Classes/Layer/Main/Home/HomeLayer.cpp
-  Classes/Layer/Main/Login/LoginLayer.cpp
-  Classes/Layer/Main/Preface/Preface.cpp
+  Classes/Layer/Home/HomeLayer.cpp
+  Classes/Layer/Login/LoginLayer.cpp
+  Classes/Layer/Preface/Preface.cpp
   Classes/Sprite/Loading/LoadingSprite.cpp
-  Classes/Sprite/Main/MainSprite.cpp
+  Classes/Sprite/MainSprite.cpp
   Classes/Director/Director.cpp
-  Classes/Layer/Main/Component/TalkFrame.cpp
+  Classes/Layer/Component/TalkFrame.cpp
   ${PLATFORM_SPECIFIC_SRC}
 )
 
@@ -169,18 +169,18 @@ set(GAME_HEADERS
   Classes/Producer/Obstacle/Obstacle.h
   Classes/Producer/JsonCpp/json/json.h
   Classes/Scene/Loading/LoadingScene.h
-  Classes/Scene/Main/Home/Home.h
-  Classes/Scene/Main/Login/Login.h
-  Classes/Scene/Main/Preface/Preface.h
+  Classes/Scene/Home/Home.h
+  Classes/Scene/Login/Login.h
+  Classes/Scene/Preface/Preface.h
   Classes/Layer/Loading/LoadingLayer.h
-  Classes/Layer/Main/Home/HomeLayer.h
-  Classes/Layer/Main/Login/LoginLayer.h
-  Classes/Layer/Main/Preface/Preface.h
+  Classes/Layer/Home/HomeLayer.h
+  Classes/Layer/Login/LoginLayer.h
+  Classes/Layer/Preface/Preface.h
   Classes/Sprite/Loading/LoadingSprite.h
-  Classes/Sprite/Main/MainSprite.cpp
+  Classes/Sprite/MainSprite.cpp
   Classes/Director/Director.h
   Classes/Global/Global.h
-  Classes/Layer/Main/Component/TalkFrame.h
+  Classes/Layer/Component/TalkFrame.h
   ${PLATFORM_SPECIFIC_HEADERS}
 )
 
