@@ -1,12 +1,11 @@
 #ifndef __LEADER_H__
 #define __LEADER_H__
 
-#include "iostream"
-#include "cocos2d.h"
+#include "../../../Global/Global.h"
 
 namespace jiangweigithub {
 
-  class Leader
+  class Leader: public Human
   {
   public:
     // Leader();

@@ -3,40 +3,89 @@
 
 #pragma once
 
+#include "iostream"
+#include "cocos2d.h"
+
 namespace jiangweigithub {
 
-#define TALKLINEWIDTH 111
-#define PREFACEWIDTH 99
-#define PREFACESPEED 2
-#define LITTLETALKFRAMEEDGE 2
-#define LITTLETALKFRAMEARROWWIDTH 10
-#define LITTLETALKFRAMEARROWHEIGHT 10
+  #define TALKLINE_WIDTH 111
+  #define PREFACE_WIDTH 99
+  #define PREFACE_SPEED 2
+  #define TALK_FRAME_EDGE 2
+  #define TALK_FRAME_ARROW_WIDTH 10
+  #define TALK_FRAME_ARROW_HEIGHT 10
 
-enum littleTalkFrameArrowDirection
-{
-  LEFT = 1,
-  RIGHT = 2,
-};
+  #define ROLE_SIZE_WIDTH 30
+  #define ROLE_SIZE_HEIGHT 50
 
-enum CHAPTER
-{
-  // >>>>>>>>>>>>>>>>>
-  HOME =    10000,
-  MYROOM =  10100,
+  #define FRAMES_DELAY 0.2f
 
-  // >>>>>>>>>>>>>>>>>
-  TOWN = 20000,
+  enum SEX
+  {
+    MAN = 1,
+    WOMAN = 2,
+  };
 
-  // >>>>>>>>>>>>>>>>>
-  FIELD = 30000,
+  enum MOOD
+  {
+    GOOD = 1,
+    NORMAL = 2,
+    BAD = 3,
+  };
 
-  // >>>>>>>>>>>>>>>>>
-  FOREST = 40000,
+  enum TALK_FRAME_ARROW_DIRECTION
+  {
+    LEFT = 1,
+    RIGHT = 2,
+  };
 
-  // >>>>>>>>>>>>>>>>>
-  CASTLE = 50000,
-};
+  enum CHAPTER
+  {
+    // >>>>>>>>>>>>>>>>>
+    HOME =    10000,
+    MYROOM =  10100,
 
+    // >>>>>>>>>>>>>>>>>
+    TOWN = 20000,
+
+    // >>>>>>>>>>>>>>>>>
+    FIELD = 30000,
+
+    // >>>>>>>>>>>>>>>>>
+    FOREST = 40000,
+
+    // >>>>>>>>>>>>>>>>>
+    CASTLE = 50000,
+  };
+
+  enum HEADDRESS
+  {
+    HAT = 1,
+    TIARA = 2,
+
+    EMPTY = 999,
+  };
+
+  enum UPPER_BODY
+  {
+    GLOVES = 1,
+
+    EMPTY = 999,
+  };
+
+  enum LOWER_BODY
+  {
+    BOOTS = 1,
+
+    EMPTY = 999,
+  };
+
+  enum ACCESSORY
+  {
+    RING = 1,
+
+    EMPTY = 999,
+  };
 }
 
 #endif // __GLOBAL_H__
