@@ -3,10 +3,8 @@
 
 #pragma once
 
-#include "iostream"
-#include "cocos2d.h"
-
-#include "../../Sprite/Loading/LoadingSprite.h"
+#include "../../Global/Global.h"
+#include "../../Material/Role/Role.h"
 
 namespace jiangweigithub {
 
