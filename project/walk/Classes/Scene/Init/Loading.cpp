@@ -38,26 +38,6 @@ namespace jiangweigithub {
                                     ->addImageAsync("Inside_B.png", CC_CALLBACK_1(LoadingScene::loadingCallback, this));
     cocos2d::Director::getInstance()->getTextureCache()
                                     ->addImageAsync("Inside_C.png", CC_CALLBACK_1(LoadingScene::loadingCallback, this));
-    // cocos2d::Director::getInstance()->getTextureCache()
-    //                                 ->addImageAsync("1.jpg", CC_CALLBACK_1(LoadingScene::loadingCallback, this));
-    // cocos2d::Director::getInstance()->getTextureCache()
-    //                                 ->addImageAsync("2.jpg", CC_CALLBACK_1(LoadingScene::loadingCallback, this));
-    // cocos2d::Director::getInstance()->getTextureCache()
-    //                                 ->addImageAsync("3.jpg", CC_CALLBACK_1(LoadingScene::loadingCallback, this));
-    // cocos2d::Director::getInstance()->getTextureCache()
-    //                                 ->addImageAsync("4.jpg", CC_CALLBACK_1(LoadingScene::loadingCallback, this));
-    // cocos2d::Director::getInstance()->getTextureCache()
-    //                                 ->addImageAsync("5.jpg", CC_CALLBACK_1(LoadingScene::loadingCallback, this));
-    // cocos2d::Director::getInstance()->getTextureCache()
-    //                                 ->addImageAsync("6.jpg", CC_CALLBACK_1(LoadingScene::loadingCallback, this));
-    // cocos2d::Director::getInstance()->getTextureCache()
-    //                                 ->addImageAsync("7.jpg", CC_CALLBACK_1(LoadingScene::loadingCallback, this));
-    // cocos2d::Director::getInstance()->getTextureCache()
-    //                                 ->addImageAsync("8.jpg", CC_CALLBACK_1(LoadingScene::loadingCallback, this));
-    // cocos2d::Director::getInstance()->getTextureCache()
-    //                                 ->addImageAsync("9.jpg", CC_CALLBACK_1(LoadingScene::loadingCallback, this));
-    // cocos2d::Director::getInstance()->getTextureCache()
-    //                                 ->addImageAsync("10.jpg", CC_CALLBACK_1(LoadingScene::loadingCallback, this));
 
     return true;
   }

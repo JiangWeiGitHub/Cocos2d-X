@@ -2,20 +2,6 @@
 
 namespace jiangweigithub {
 
-  // Leader::Leader()
-  // {
-  //   this->HP = 200;
-  //   this->name = "Baobao";
-
-  //   this->createAnimation("sabin.png");
-  // }
-
-  // Leader::~Leader()
-  // {
-  //   this->HP = 200;
-  //   this->name = "Baobao";
-  // }
-
   unsigned int Leader::HP = 200;
   std::string Leader::heroName = "Baobao";
   std::string Leader::fileName = "sabin.png";
