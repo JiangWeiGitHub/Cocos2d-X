@@ -2,6 +2,17 @@
 
 namespace jiangweigithub {
 
+  bool Role::init()
+  {
+    if (!Sprite::init())
+    {
+      return false;
+    }
+
+
+    return true;
+  }
+
   bool Role::setName(std::string name)
   {
     this->_name = name;

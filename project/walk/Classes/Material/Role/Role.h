@@ -7,9 +7,13 @@
 
 namespace jiangweigithub {
 
-  class Role
+  class Role: public cocos2d::Sprite
   {
   public:
+    virtual bool init();
+
+    CREATE_FUNC(Role);
+
     bool setName(std::string name);
     std::string getName();
 
