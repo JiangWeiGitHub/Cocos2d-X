@@ -7,7 +7,7 @@
 #include "cocos2d.h"
 
 #include "../Global/Global.h"
-#include "../Scene/Loading/LoadingScene.h"
+#include "../Scene/Init/Loading.h"
 
 static cocos2d::Size designResolutionSize = cocos2d::Size(1280, 720);
 static cocos2d::Size smallResolutionSize = cocos2d::Size(1280, 720);

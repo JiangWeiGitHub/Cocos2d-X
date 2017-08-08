@@ -7,8 +7,8 @@
 #include <unistd.h>
 #include "cocos2d.h"
 
-#include "../../Layer/Loading/LoadingLayer.h"
-#include "../../Scene/Main/Login/Login.h"
+#include "../../Layer/Init/Loading.h"
+#include "../../Scene/Init/Login.h"
 #include "../../Director/Director.h"
 
 namespace jiangweigithub {
