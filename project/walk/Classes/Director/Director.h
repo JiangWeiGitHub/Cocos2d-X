@@ -20,6 +20,8 @@ namespace jiangweigithub {
   {
   public:
     static void initDirector();
+    static void switchLoginScene();
+
     static void openLoadingScene();
     static void loadingSceneCallback();
     static void loginSceneCallback();

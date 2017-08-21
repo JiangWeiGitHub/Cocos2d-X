@@ -6,7 +6,7 @@
 #include "iostream"
 #include "cocos2d.h"
 
-#include "../../../Layer/Main/Login/LoginLayer.h"
+#include "../../Layer/Init/Login.h"
 
 namespace jiangweigithub {
 

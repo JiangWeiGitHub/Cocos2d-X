@@ -40,6 +40,12 @@ namespace jiangweigithub {
     }
   }
 
+  void Director::switchLoginScene()
+  {
+    auto scene = jiangweigithub::Login::getLoginScene();
+    director->runWithScene(scene);
+  }
+
   void Director::openLoadingScene()
   {
     auto scene = LoadingScene::getLoadingScene();
