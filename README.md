@@ -8,6 +8,7 @@
 + [Official Github](https://github.com/cocos2d/cocos2d-x)
 + [Cocos command-line tool](http://cocos2d-x.org/docs/editors_and_tools/cocosCLTool/)
 + [Samples](https://github.com/cocos2d/cocos2d-x-samples)
++ [Manual](http://cocos2d-x.org/docs/cocos2d-x/zh/)
 
 ### Run Test Sample
 + download
