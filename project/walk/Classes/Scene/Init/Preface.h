@@ -6,7 +6,7 @@
 #include "iostream"
 #include "cocos2d.h"
 
-#include "../../../Layer/Main/Preface/Preface.h"
+#include "../../Layer/Init/Preface.h"
 
 namespace jiangweigithub {
 

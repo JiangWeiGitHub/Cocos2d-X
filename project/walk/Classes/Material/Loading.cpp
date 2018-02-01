@@ -1,4 +1,4 @@
-#include "./LoadingSprite.h"
+#include "./Loading.h"
 
 namespace jiangweigithub {
 

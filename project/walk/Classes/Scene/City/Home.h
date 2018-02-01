@@ -6,8 +6,8 @@
 #include "iostream"
 #include "cocos2d.h"
 
-#include "../../../Layer/Main/Home/HomeLayer.h"
-#include "../../../Layer/Main/Component/TalkFrame.h"
+#include "../../Layer/City/Home.h"
+#include "../../Layer/Talk/TalkFrame.h"
 
 namespace jiangweigithub {
 

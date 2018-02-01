@@ -63,28 +63,28 @@ namespace jiangweigithub {
     HAT = 1,
     TIARA = 2,
 
-    EMPTY = 999,
+    HEADDRESS_EMPTY = 999,
   };
 
   enum UPPER_BODY
   {
     GLOVES = 1,
 
-    EMPTY = 999,
+    UPPER_BODY_EMPTY = 999,
   };
 
   enum LOWER_BODY
   {
     BOOTS = 1,
 
-    EMPTY = 999,
+    LOWER_BODY_EMPTY = 999,
   };
 
   enum ACCESSORY
   {
     RING = 1,
 
-    EMPTY = 999,
+    ACCESSORY_EMPTY = 999,
   };
 }
 

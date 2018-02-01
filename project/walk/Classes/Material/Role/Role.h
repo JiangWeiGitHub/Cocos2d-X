@@ -24,10 +24,10 @@ namespace jiangweigithub {
     unsigned int getMP();
 
     bool setPAP(unsigned int pap);
-    unsigned int getPDP();
+    unsigned int getPAP();
 
     bool setPDP(unsigned int pdp);
-    unsigned int getName();
+    unsigned int getPDP();
 
     bool setMAP(unsigned int map);
     unsigned int getMAP();

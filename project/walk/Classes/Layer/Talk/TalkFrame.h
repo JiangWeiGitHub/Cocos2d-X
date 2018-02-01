@@ -4,9 +4,9 @@
 #include "iostream"
 #include "cocos2d.h"
 
-#include "../../../Global/Global.h"
-#include "../../../Sprite/Main/MainSprite.h"
-#include "../../../Producer/JsonCpp/json/json.h"
+#include "../../Global/Global.h"
+#include "../../Processor/JsonCpp/json/json.h"
+#include "../../Scene/City/Home.h"
 
 namespace jiangweigithub {
 

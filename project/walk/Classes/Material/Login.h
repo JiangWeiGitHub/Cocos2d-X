@@ -6,8 +6,8 @@
 #include "iostream"
 #include "cocos2d.h"
 
-#include "../../Global/Global.h"
-#include "../../Scene/Main/Home/Home.h"
+#include "../Global/Global.h"
+#include "../Scene/City/Home.h"
 
 namespace jiangweigithub {
 

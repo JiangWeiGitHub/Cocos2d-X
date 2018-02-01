@@ -6,10 +6,10 @@
 #include "iostream"
 #include "cocos2d.h"
 
-#include "../../../Sprite/Main/MainSprite.h"
-#include "../../../Sprite/Role/Human/Leader.h"
-#include "../../../Producer/KeyboardState/KeyManager.h"
-#include "../../../Producer/Obstacle/Obstacle.h"
+#include "../../Material/Role/Role.h"
+#include "../../Material/Role/Human/Leader.h"
+#include "../../Processor/KeyboardState/KeyManager.h"
+#include "../../Processor/Obstacle/Obstacle.h"
 
 namespace jiangweigithub {
   

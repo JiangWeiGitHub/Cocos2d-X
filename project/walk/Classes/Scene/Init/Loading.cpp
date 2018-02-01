@@ -1,4 +1,4 @@
-#include "./LoadingScene.h"
+#include "./Loading.h"
 
 namespace jiangweigithub {
 

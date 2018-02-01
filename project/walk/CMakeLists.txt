@@ -128,59 +128,82 @@ if ( WIN32 )
 endif( WIN32 )
 
 set(GAME_SRC
-  Classes/AppDelegate.cpp
-  Classes/Sprite/Role/Role.cpp
-  Classes/Sprite/Role/Human/Leader.cpp
-  Classes/Producer/KeyboardState/KeyboardState.cpp
-  Classes/Producer/KeyboardState/KeyBottom.cpp
-  Classes/Producer/KeyboardState/KeyLeft.cpp
-  Classes/Producer/KeyboardState/KeyManager.cpp
-  Classes/Producer/KeyboardState/KeyRight.cpp
-  Classes/Producer/KeyboardState/KeyStop.cpp
-  Classes/Producer/KeyboardState/KeyTop.cpp
-  Classes/Producer/Obstacle/Obstacle.cpp
-  Classes/Producer/JsonCpp/jsoncpp.cpp
-  Classes/Scene/Loading/LoadingScene.cpp
-  Classes/Scene/Home/Home.cpp
-  Classes/Scene/Login/Login.cpp
-  Classes/Scene/Preface/Preface.cpp
-  Classes/Layer/Loading/LoadingLayer.cpp
-  Classes/Layer/Home/HomeLayer.cpp
-  Classes/Layer/Login/LoginLayer.cpp
-  Classes/Layer/Preface/Preface.cpp
-  Classes/Sprite/Loading/LoadingSprite.cpp
-  Classes/Sprite/MainSprite.cpp
   Classes/Director/Director.cpp
-  Classes/Layer/Component/TalkFrame.cpp
+
+  Classes/Layer/City/Home.cpp
+  Classes/Layer/Init/Loading.cpp
+  Classes/Layer/Init/Login.cpp
+  Classes/Layer/Init/Preface.cpp
+  Classes/Layer/Person/Protagonist.cpp
+  Classes/Layer/Talk/TalkFrame.cpp
+
+  Classes/Material/Role/Role.cpp
+  Classes/Material/Role/Human/Human.cpp
+  Classes/Material/Role/Human/Leader.cpp
+  Classes/Material/Role/Human/Protagonist.cpp
+  Classes/Material/Home.cpp
+  Classes/Material/Loading.cpp
+  Classes/Material/Login.cpp
+
+  Classes/Processor/JsonCpp/jsoncpp.cpp
+  Classes/Processor/KeyboardState/KeyboardState.cpp
+  Classes/Processor/KeyboardState/KeyBottom.cpp
+  Classes/Processor/KeyboardState/KeyLeft.cpp
+  Classes/Processor/KeyboardState/KeyManager.cpp
+  Classes/Processor/KeyboardState/KeyRight.cpp
+  Classes/Processor/KeyboardState/KeyStop.cpp
+  Classes/Processor/KeyboardState/KeyTop.cpp
+  Classes/Processor/Obstacle/Obstacle.cpp
+
+  Classes/Scene/City/Home.cpp
+  Classes/Scene/Init/Loading.cpp
+  Classes/Scene/Init/Login.cpp
+  Classes/Scene/Init/Preface.cpp
+
+  Classes/AppDelegate.cpp
+
   ${PLATFORM_SPECIFIC_SRC}
 )
 
 set(GAME_HEADERS
-  Classes/AppDelegate.h
-  Classes/Sprite/Role/Role.h
-  Classes/Sprite/Role/Human/Leader.h
-  Classes/Producer/KeyboardState/KeyboardState.h
-  Classes/Producer/KeyboardState/KeyBottom.h
-  Classes/Producer/KeyboardState/KeyLeft.h
-  Classes/Producer/KeyboardState/KeyManager.h
-  Classes/Producer/KeyboardState/KeyRight.h
-  Classes/Producer/KeyboardState/KeyStop.h
-  Classes/Producer/KeyboardState/KeyTop.h
-  Classes/Producer/Obstacle/Obstacle.h
-  Classes/Producer/JsonCpp/json/json.h
-  Classes/Scene/Loading/LoadingScene.h
-  Classes/Scene/Home/Home.h
-  Classes/Scene/Login/Login.h
-  Classes/Scene/Preface/Preface.h
-  Classes/Layer/Loading/LoadingLayer.h
-  Classes/Layer/Home/HomeLayer.h
-  Classes/Layer/Login/LoginLayer.h
-  Classes/Layer/Preface/Preface.h
-  Classes/Sprite/Loading/LoadingSprite.h
-  Classes/Sprite/MainSprite.cpp
   Classes/Director/Director.h
+
   Classes/Global/Global.h
-  Classes/Layer/Component/TalkFrame.h
+
+  Classes/Layer/City/Home.h
+  Classes/Layer/Init/Loading.h
+  Classes/Layer/Init/Login.h
+  Classes/Layer/Init/Preface.h
+  Classes/Layer/Person/Protagonist.h
+  Classes/Layer/Talk/TalkFrame.h
+
+  Classes/Material/Role/Role.h
+  Classes/Material/Role/Human/Human.h
+  Classes/Material/Role/Human/Leader.h
+  Classes/Material/Role/Human/Protagonist.h
+  Classes/Material/Home.h
+  Classes/Material/Loading.h
+  Classes/Material/Login.h
+
+  Classes/Processor/JsonCpp/json/json-forwards.h
+  Classes/Processor/JsonCpp/json/json.h
+
+  Classes/Processor/KeyboardState/KeyboardState.h
+  Classes/Processor/KeyboardState/KeyBottom.h
+  Classes/Processor/KeyboardState/KeyLeft.h
+  Classes/Processor/KeyboardState/KeyManager.h
+  Classes/Processor/KeyboardState/KeyRight.h
+  Classes/Processor/KeyboardState/KeyStop.h
+  Classes/Processor/KeyboardState/KeyTop.h
+  Classes/Processor/Obstacle/Obstacle.h
+
+  Classes/Scene/City/Home.h
+  Classes/Scene/Init/Loading.h
+  Classes/Scene/Init/Login.h
+  Classes/Scene/Init/Preface.h
+
+  Classes/AppDelegate.h
+
   ${PLATFORM_SPECIFIC_HEADERS}
 )
 

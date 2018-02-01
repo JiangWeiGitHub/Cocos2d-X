@@ -1,4 +1,4 @@
-#include "./MainSprite.h"
+#include "./Home.h"
 
 namespace jiangweigithub {
 
