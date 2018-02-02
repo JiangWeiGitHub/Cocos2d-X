@@ -6,6 +6,7 @@
 #include "iostream"
 #include "cocos2d.h"
 
+#include "../../Material/Home.h"
 #include "../../Material/Role/Role.h"
 #include "../../Material/Role/Human/Leader.h"
 #include "../../Processor/KeyboardState/KeyManager.h"

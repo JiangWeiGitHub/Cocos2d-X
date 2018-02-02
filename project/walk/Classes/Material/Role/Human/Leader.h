@@ -18,10 +18,10 @@ namespace jiangweigithub {
     bool setName(std::string name);
     std::string getName();
 
-    cocos2d::Animation* getAnimationTop();
-    cocos2d::Animation* getAnimationBottom();
-    cocos2d::Animation* getAnimationLeft();
-    cocos2d::Animation* getAnimationRight();
+    static cocos2d::Animation* getAnimationTop();
+    static cocos2d::Animation* getAnimationBottom();
+    static cocos2d::Animation* getAnimationLeft();
+    static cocos2d::Animation* getAnimationRight();
 
   private:
     // static bool createAnimation(std::string fileName);

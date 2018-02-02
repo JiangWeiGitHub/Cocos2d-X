@@ -6,6 +6,7 @@
 #include "iostream"
 #include "cocos2d.h"
 
+#include "../../Material/Login.h"
 #include "../../Material/Role/Role.h"
 #include "../../Scene/Init/Preface.h"
 

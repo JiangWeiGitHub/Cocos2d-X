@@ -5,6 +5,7 @@
 #include "cocos2d.h"
 
 #include "../../Global/Global.h"
+#include "../../Material/Login.h"
 #include "../../Processor/JsonCpp/json/json.h"
 #include "../../Scene/City/Home.h"
 

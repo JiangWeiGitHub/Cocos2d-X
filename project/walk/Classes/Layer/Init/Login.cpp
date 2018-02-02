@@ -16,10 +16,10 @@ namespace jiangweigithub {
       return false;
     }
 
-    this->_background = MainSprite::getBackgroundSprite();
-    this->_newGame = MainSprite::getNewGame();
-    this->_loadGame = MainSprite::getLoadGame();
-    this->_configGame = MainSprite::getConfigGame();
+    this->_background = LoginMaterial::getBackgroundSprite();
+    this->_newGame = LoginMaterial::getNewGame();
+    this->_loadGame = LoginMaterial::getLoadGame();
+    this->_configGame = LoginMaterial::getConfigGame();
 
     this->_newGame->setCallback(CC_CALLBACK_1(LoginLayer::onNewGame, this));
     this->_loadGame->setCallback(CC_CALLBACK_1(LoginLayer::onLoadGame, this));

@@ -11,7 +11,7 @@
 
 namespace jiangweigithub {
 
-  class MainSprite
+  class HomeMaterial
   {
   public:
     // Home
@@ -45,7 +45,7 @@ namespace jiangweigithub {
     static cocos2d::Menu* getNextPage();
 
     static cocos2d::DrawNode* getLittleTalkFrame(int width, int height,
-                                littleTalkFrameArrowDirection direction,
+                                TALK_FRAME_ARROW_DIRECTION direction,
                                 float lineWidth, cocos2d::Color4F lineColor,
                                 cocos2d::Color4F fillColor
                               );
@@ -62,4 +62,4 @@ namespace jiangweigithub {
   
 }
 
-#endif // __MAINSPRITE_H__
+#endif // __HOMEMATERIAL_H__

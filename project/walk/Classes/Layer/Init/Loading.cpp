@@ -9,7 +9,7 @@ namespace jiangweigithub {
       return false;
     }
 
-    Role::Role* role = new Role::Role();
+    jiangweigithub::Role* role = new jiangweigithub::Role();
     std::vector<cocos2d::Rect> vec;
     vec.push_back(cocos2d::Rect(180,0,30,50));
     vec.push_back(cocos2d::Rect(210,0,30,50));

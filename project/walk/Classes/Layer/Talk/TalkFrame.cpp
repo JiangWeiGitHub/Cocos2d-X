@@ -24,27 +24,27 @@ namespace jiangweigithub {
     _thirdLine = "";
     _peopleName = "- 快夸宝宝 -";
 
-    auto drawFrame = MainSprite::getDrawFrame();
-    auto leftFlower = MainSprite::getFrameLeftFlowers();
-    auto rightFlower = MainSprite::getFrameRightFlowers();
+    auto drawFrame = LoginMaterial::getDrawFrame();
+    auto leftFlower = LoginMaterial::getFrameLeftFlowers();
+    auto rightFlower = LoginMaterial::getFrameRightFlowers();
 
     _readTalkContents(1);
     _dealTalkContents(1);
 
-    auto avatar = MainSprite::getAvatar(_avatar);
-    auto firstLine = MainSprite::getFirstLine(_firstLine);
-    auto secondeLine = MainSprite::getSecondLine(_secondLine);
-    auto thirdLine = MainSprite::getThirdLine(_thirdLine);
-    auto peopleName = MainSprite::getPeopleName(_peopleName);
+    auto avatar = LoginMaterial::getAvatar(_avatar);
+    auto firstLine = LoginMaterial::getFirstLine(_firstLine);
+    auto secondeLine = LoginMaterial::getSecondLine(_secondLine);
+    auto thirdLine = LoginMaterial::getThirdLine(_thirdLine);
+    auto peopleName = LoginMaterial::getPeopleName(_peopleName);
 
-    auto nextPageItem = MainSprite::getNextPageItem();
+    auto nextPageItem = LoginMaterial::getNextPageItem();
     nextPageItem->setCallback(CC_CALLBACK_1(TalkFrame::_nextPageCallback, this));
 
-    auto nextPage = MainSprite::getNextPage();
+    auto nextPage = LoginMaterial::getNextPage();
 
-    MainSprite::setFirstLine(_line[_counter++]);
-    MainSprite::setSecondLine(_line[_counter++]);
-    MainSprite::setThirdLine(_line[_counter++]);
+    LoginMaterial::setFirstLine(_line[_counter++]);
+    LoginMaterial::setSecondLine(_line[_counter++]);
+    LoginMaterial::setThirdLine(_line[_counter++]);
 
     this->addChild(drawFrame, 0);
     this->addChild(leftFlower, 2);
@@ -63,9 +63,9 @@ namespace jiangweigithub {
   {
     // _dealTalkContents(1);
 
-    MainSprite::setFirstLine(_line[_counter++]);
-    MainSprite::setSecondLine(_line[_counter++]);
-    MainSprite::setThirdLine(_line[_counter++]);
+    LoginMaterial::setFirstLine(_line[_counter++]);
+    LoginMaterial::setSecondLine(_line[_counter++]);
+    LoginMaterial::setThirdLine(_line[_counter++]);
   }
 
   void TalkFrame::_readTalkContents(int id)
@@ -92,8 +92,8 @@ namespace jiangweigithub {
       {
         // std::cout<<"_tmpPosition: "<<_tmpPosition<<std::endl;
         // std::cout<<"son: "<<json_object["script"]["contents"][i].asString().substr(_tmpPosition, TALKLINEWIDTH)<<std::endl;
-        _line.push_back(json_object["script"]["contents"][i].asString().substr(_tmpPosition, TALKLINEWIDTH));
-        _tmpPosition += TALKLINEWIDTH;
+        _line.push_back(json_object["script"]["contents"][i].asString().substr(_tmpPosition, TALKLINE_WIDTH));
+        _tmpPosition += TALKLINE_WIDTH;
       }
     }
   }

@@ -35,8 +35,8 @@ namespace jiangweigithub {
       unsigned int _tmpPosition = 0;
       while(_tmpPosition <= json_object["script"]["contents"][i].asString().size())
       {
-        _line.push_back(json_object["script"]["contents"][i].asString().substr(_tmpPosition, PREFACEWIDTH));
-        _tmpPosition += PREFACEWIDTH;
+        _line.push_back(json_object["script"]["contents"][i].asString().substr(_tmpPosition, PREFACE_WIDTH));
+        _tmpPosition += PREFACE_WIDTH;
       }
     }
 
@@ -73,9 +73,9 @@ namespace jiangweigithub {
 
     this->addChild(cliper, 0);
 
-    auto nextPageItem = MainSprite::getNextPageItem();
+    auto nextPageItem = LoginMaterial::getNextPageItem();
     nextPageItem->setCallback(CC_CALLBACK_1(PrefaceLayer::_nextPageCallback, this));
-    auto nextPage = MainSprite::getNextPage();
+    auto nextPage = LoginMaterial::getNextPage();
 
     this->addChild(nextPage, 1);
 
@@ -91,7 +91,7 @@ namespace jiangweigithub {
 
   void PrefaceLayer::update(float delta)
   {
-    if(this->counter > PREFACESPEED)
+    if(this->counter > PREFACE_WIDTH)
     {
       this->_text->getPositionY() > 500 ? this->_gotoHomeScene() : this->_text->setPositionY(this->_text->getPositionY() + 1);
       this->counter = 0;

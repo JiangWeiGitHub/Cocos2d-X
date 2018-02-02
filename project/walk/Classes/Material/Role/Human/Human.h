@@ -2,6 +2,7 @@
 #define __HUMAN_H__
 
 #include "../../../Global/Global.h"
+#include "../Role.h"
 
 namespace jiangweigithub {
 

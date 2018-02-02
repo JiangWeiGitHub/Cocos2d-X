@@ -68,12 +68,7 @@ namespace jiangweigithub {
     return true;
   }
 
-  unsigned int Role::getName()
-  {
-    return this->_physicalDefencePoint;
-  }
-
-  bool Role::setMAP(unsigned int map);
+  bool Role::setMAP(unsigned int map)
   {
     this->_mentalAttackPoint = map;
 
@@ -97,7 +92,7 @@ namespace jiangweigithub {
     return this->_mentalDefencePoint;
   }
 
-  bool Role::setSP(unsigned int sp);
+  bool Role::setSP(unsigned int sp)
   {
     this->_speedPoint = sp;
 
@@ -128,7 +123,7 @@ namespace jiangweigithub {
     return true;
   }
 
-  unsigned int Role::getEP();
+  unsigned int Role::getEP()
   {
     return this->_evasionPoint;
   }

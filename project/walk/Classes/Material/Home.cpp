@@ -2,14 +2,14 @@
 
 namespace jiangweigithub {
 
-  cocos2d::Label* MainSprite::_firstLine = NULL;
-  cocos2d::Label* MainSprite::_secondLine = NULL;
-  cocos2d::Label* MainSprite::_thirdLine = NULL;
-  cocos2d::Label* MainSprite::_peopleName = NULL;
-  cocos2d::Sprite* MainSprite::_avatar = NULL;
-  cocos2d::MenuItemImage* MainSprite::_nextPageItem = NULL;
+  cocos2d::Label* HomeMaterial::_firstLine = NULL;
+  cocos2d::Label* HomeMaterial::_secondLine = NULL;
+  cocos2d::Label* HomeMaterial::_thirdLine = NULL;
+  cocos2d::Label* HomeMaterial::_peopleName = NULL;
+  cocos2d::Sprite* HomeMaterial::_avatar = NULL;
+  cocos2d::MenuItemImage* HomeMaterial::_nextPageItem = NULL;
 
-  cocos2d::Label* MainSprite::getHomeTitle()
+  cocos2d::Label* HomeMaterial::getHomeTitle()
   {
     auto homeTitle = cocos2d::Label::createWithTTF("家", "fonts/MSYHBD.TTF", 24);
     // homeTitle->enableBold();
@@ -18,14 +18,14 @@ namespace jiangweigithub {
     return homeTitle;
   }
 
-  cocos2d::TMXTiledMap* MainSprite::getTileMapSprite()
+  cocos2d::TMXTiledMap* HomeMaterial::getTileMapSprite()
   {
     auto tileMapSprite = cocos2d::TMXTiledMap::create("home.tmx");
 
     return tileMapSprite;
   }
 
-  cocos2d::Sprite* MainSprite::getLeaderSprite()
+  cocos2d::Sprite* HomeMaterial::getLeaderSprite()
   {
     cocos2d::Texture2D* textTure = cocos2d::Director::getInstance()->getTextureCache()->addImage("sabin.png");
 
@@ -89,14 +89,14 @@ namespace jiangweigithub {
     return leaderSprite;
   }
 
-  cocos2d::Sprite* MainSprite::getBackgroundSprite()
+  cocos2d::Sprite* HomeMaterial::getBackgroundSprite()
   {
     auto tmp = cocos2d::Sprite::create("login.jpg");
 
     return tmp;
   }
 
-  cocos2d::MenuItemLabel* MainSprite::getNewGame()
+  cocos2d::MenuItemLabel* HomeMaterial::getNewGame()
   {
     auto myLabel = cocos2d::Label::createWithTTF("新 游 戏", "fonts/MSYHBD.TTF", 30);
     // myLabel->enableShadow();
@@ -108,7 +108,7 @@ namespace jiangweigithub {
     return tmp;
   }
 
-  cocos2d::MenuItemLabel* MainSprite::getLoadGame()
+  cocos2d::MenuItemLabel* HomeMaterial::getLoadGame()
   {
     auto myLabel = cocos2d::Label::createWithTTF("读 取 进 度", "fonts/MSYHBD.TTF", 30);
     // myLabel->enableShadow();
@@ -120,7 +120,7 @@ namespace jiangweigithub {
     return tmp;
   }
 
-  cocos2d::MenuItemLabel* MainSprite::getConfigGame()
+  cocos2d::MenuItemLabel* HomeMaterial::getConfigGame()
   {
     auto myLabel = cocos2d::Label::createWithTTF("配 置", "fonts/MSYHBD.TTF", 30);
     // myLabel->enableShadow();
@@ -132,7 +132,7 @@ namespace jiangweigithub {
     return tmp;
   }
 
-  cocos2d::DrawNode* MainSprite::getDrawFrame()
+  cocos2d::DrawNode* HomeMaterial::getDrawFrame()
   {
     cocos2d::DrawNode* tmp = cocos2d::DrawNode::create();
 
@@ -146,7 +146,7 @@ namespace jiangweigithub {
     return tmp;
   }
 
-  cocos2d::Sprite* MainSprite::getFrameLeftFlowers()
+  cocos2d::Sprite* HomeMaterial::getFrameLeftFlowers()
   {
     auto tmp =  cocos2d::Sprite::create("golderFlower.png");
     tmp->setScale(0.6);
@@ -158,7 +158,7 @@ namespace jiangweigithub {
     return tmp;
   }
 
-  cocos2d::Sprite* MainSprite::getFrameRightFlowers()
+  cocos2d::Sprite* HomeMaterial::getFrameRightFlowers()
   {
     auto tmp =  cocos2d::Sprite::create("golderFlower.png");
     tmp->setScale(0.6);
@@ -169,7 +169,7 @@ namespace jiangweigithub {
     return tmp;
   }
 
-  cocos2d::Label* MainSprite::getFirstLine(std::string contents)
+  cocos2d::Label* HomeMaterial::getFirstLine(std::string contents)
   {
     _firstLine = cocos2d::Label::createWithTTF(contents, "fonts/MSYHBD.TTF", 22);
     _firstLine->setAnchorPoint(cocos2d::Vec2(0, 0));
@@ -180,7 +180,7 @@ namespace jiangweigithub {
     return _firstLine;
   }
 
-  cocos2d::Label* MainSprite::getSecondLine(std::string contents)
+  cocos2d::Label* HomeMaterial::getSecondLine(std::string contents)
   {
     _secondLine = cocos2d::Label::createWithTTF(contents, "fonts/MSYHBD.TTF", 22);
     _secondLine->setAnchorPoint(cocos2d::Vec2(0, 0));
@@ -191,7 +191,7 @@ namespace jiangweigithub {
     return _secondLine;
   }
 
-  cocos2d::Label* MainSprite::getThirdLine(std::string contents)
+  cocos2d::Label* HomeMaterial::getThirdLine(std::string contents)
   {
     _thirdLine = cocos2d::Label::createWithTTF(contents, "fonts/MSYHBD.TTF", 22);
     _thirdLine->setAnchorPoint(cocos2d::Vec2(0, 0));
@@ -202,7 +202,7 @@ namespace jiangweigithub {
     return _thirdLine;
   }
 
-  cocos2d::Label* MainSprite::getPeopleName(std::string contents)
+  cocos2d::Label* HomeMaterial::getPeopleName(std::string contents)
   {
     _peopleName = cocos2d::Label::createWithTTF(contents, "fonts/MSYHBD.TTF", 22);
     _peopleName->setAnchorPoint(cocos2d::Vec2(0, 0));
@@ -214,7 +214,7 @@ namespace jiangweigithub {
     return _peopleName;
   }
 
-  cocos2d::Sprite* MainSprite::getAvatar(std::string contents)
+  cocos2d::Sprite* HomeMaterial::getAvatar(std::string contents)
   {
     _avatar = cocos2d::Sprite::create(contents);
     _avatar->setScale(0.9);
@@ -224,7 +224,7 @@ namespace jiangweigithub {
     return _avatar;
   }
 
-  cocos2d::MenuItemImage* MainSprite::getNextPageItem()
+  cocos2d::MenuItemImage* HomeMaterial::getNextPageItem()
   {
     _nextPageItem = cocos2d::MenuItemImage::create(
                                                     "CloseNormal.png",
@@ -235,7 +235,7 @@ namespace jiangweigithub {
     return _nextPageItem;
   }
 
-  cocos2d::Menu* MainSprite::getNextPage()
+  cocos2d::Menu* HomeMaterial::getNextPage()
   {
     auto tmp = cocos2d::Menu::create(_nextPageItem, NULL);
     tmp->setPosition(cocos2d::Vec2::ZERO);
@@ -243,36 +243,36 @@ namespace jiangweigithub {
     return tmp;
   }
 
-  void MainSprite::setFirstLine(std::string contents)
+  void HomeMaterial::setFirstLine(std::string contents)
   {
     _firstLine->setString(contents);
     _firstLine->updateContent();
   }
 
-  void MainSprite::setSecondLine(std::string contents)
+  void HomeMaterial::setSecondLine(std::string contents)
   {
     _secondLine->setString(contents);
     _secondLine->updateContent();
   }
 
-  void MainSprite::setThirdLine(std::string contents)
+  void HomeMaterial::setThirdLine(std::string contents)
   {
     _thirdLine->setString(contents);
     _thirdLine->updateContent();
   }
 
-  void MainSprite::setPeopleName(std::string contents)
+  void HomeMaterial::setPeopleName(std::string contents)
   {
     _peopleName->setString(contents);
     _peopleName->updateContent();
   }
 
-  void MainSprite::setAvatar(std::string contents)
+  void HomeMaterial::setAvatar(std::string contents)
   {
     _avatar->setTexture(contents);
   }
 
-  cocos2d::DrawNode* MainSprite::getLittleTalkFrame(int width, int height, littleTalkFrameArrowDirection direction,
+  cocos2d::DrawNode* HomeMaterial::getLittleTalkFrame(int width, int height, littleTalkFrameArrowDirection direction,
                        float lineWidth, cocos2d::Color4F lineColor, cocos2d::Color4F fillColor
                      )
   {

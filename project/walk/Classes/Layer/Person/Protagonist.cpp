@@ -40,8 +40,8 @@ namespace jiangweigithub {
     leaderSprite->runAction(cocos2d::RepeatForever::create(cocos2d::Animate::create(Leader::getAnimationTop())));
 
     // create background
-    auto homeTitle = MainSprite::getHomeTitle();
-    auto tileMapSprite = MainSprite::getTileMapSprite();
+    auto homeTitle = LoginMaterial::getHomeTitle();
+    auto tileMapSprite = LoginMaterial::getTileMapSprite();
     auto mapSpriteSize = tileMapSprite->getContentSize();
     auto homeTitleSpriteSize = homeTitle->getContentSize();
 
